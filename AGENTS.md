@@ -21,6 +21,11 @@
 
 ---
 
+## 📏 กฎการเขียนโค้ด (Coding Rules)
+- **ความยาวไฟล์ (Max 200 Lines per File):** **แต่ละไฟล์ห้ามมีความยาวเกิน 200 บรรทัดโดยเด็ดขาด** หากเกินต้องแยกเป็น Component ย่อย, Constants หรือ Utils ทันที
+
+---
+
 ## 🚀 Common Commands
 ```bash
 # Start Development Server (Port 3002)
