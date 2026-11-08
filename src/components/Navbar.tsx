@@ -39,10 +39,10 @@ const Navbar = () => {
             <Link href="#features" className="text-dark hover:text-primary font-medium transition">จุดเด่น</Link>
             <Link href="#how-it-works" className="text-dark hover:text-primary font-medium transition">วิธีใช้งาน</Link>
             <Link 
-              href="#" 
+              href={process.env.NEXT_PUBLIC_CLIENT_APP_URL || "http://localhost:3000"}
               className="bg-primary text-white px-6 py-2.5 rounded-full font-semibold hover:bg-opacity-90 transition shadow-md"
             >
-              ดาวน์โหลดแอป
+              เข้าใช้งานแอป
             </Link>
           </div>
 
@@ -66,11 +66,11 @@ const Navbar = () => {
           <Link href="#features" onClick={() => setIsOpen(false)} className="py-3 text-dark hover:text-primary font-medium border-b border-gray-100">จุดเด่น</Link>
           <Link href="#how-it-works" onClick={() => setIsOpen(false)} className="py-3 text-dark hover:text-primary font-medium border-b border-gray-100">วิธีใช้งาน</Link>
           <Link 
-            href="#" 
+            href={process.env.NEXT_PUBLIC_CLIENT_APP_URL || "http://localhost:3000"}
             onClick={() => setIsOpen(false)}
             className="mt-4 bg-primary text-white px-6 py-3 rounded-xl font-semibold hover:bg-opacity-90 transition shadow-md text-center"
           >
-            ดาวน์โหลดแอป
+            เข้าใช้งานแอป
           </Link>
         </div>
       </div>

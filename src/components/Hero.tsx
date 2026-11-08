@@ -43,7 +43,7 @@ const Hero = () => {
               <motion.a 
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                href="#how-it-works" 
+                href={process.env.NEXT_PUBLIC_CLIENT_APP_URL || "http://localhost:3000"}
                 className="bg-primary text-white px-10 py-4 rounded-full font-bold text-lg hover:bg-opacity-90 transition shadow-lg flex items-center justify-center gap-2"
               >
                 เริ่มปั่นวันนี้ <ArrowRight className="w-5 h-5" />

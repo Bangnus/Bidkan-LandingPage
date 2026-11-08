@@ -39,10 +39,10 @@ const CTASection = () => {
           <motion.a 
             whileHover={{ scale: 1.05, boxShadow: "0 25px 50px -12px rgba(0, 0, 0, 0.5)" }}
             whileTap={{ scale: 0.95 }}
-            href="#" 
+            href={process.env.NEXT_PUBLIC_CLIENT_APP_URL || "http://localhost:3000"}
             className="bg-white text-primary px-12 py-5 rounded-full font-bold text-xl transition-all shadow-2xl inline-block"
           >
-            ดาวน์โหลดแอป Bidkan
+            เข้าใช้งานแอป Bidkan
           </motion.a>
         </motion.div>
       </div>
